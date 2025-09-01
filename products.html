@@ -11,6 +11,13 @@
             font-family: 'Inter', sans-serif;
             background-color: #f7fafc;
         }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px -3px rgba(0, 0, 0, 0.1), 0 6px 10px -2px rgba(0, 0, 0, 0.05);
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -51,28 +58,28 @@
 
         <!-- Groceries Section -->
         <section id="groceries" class="mb-16 md:mb-24">
-            <h2 class="text-4xl font-bold text-center mb-12">International Groceries</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-indigo-600">International Groceries</h2>
             <p class="text-center text-lg max-w-3xl mx-auto mb-10 text-gray-600">
                 Discover a world of flavors! Our diverse grocery section features authentic products from different cultures, bringing the best of international cuisine to your kitchen.
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Grocery Category Card -->
-                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:scale-105">
+                <div class="bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center text-center card">
                     <img src="https://placehold.co/300x200/4c51bf/ffffff?text=Puerto+Rican" alt="Puerto Rican Groceries" class="rounded-xl mb-4 shadow-md">
                     <h3 class="text-2xl font-semibold mb-2">Puerto Rican</h3>
                     <p class="text-gray-500">Find staples like Goya products, sazón, and authentic spices.</p>
                 </div>
-                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:scale-105">
+                <div class="bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center text-center card">
                     <img src="https://placehold.co/300x200/4c51bf/ffffff?text=Mexican" alt="Mexican Groceries" class="rounded-xl mb-4 shadow-md">
                     <h3 class="text-2xl font-semibold mb-2">Mexican</h3>
                     <p class="text-gray-500">Everything you need for tacos, tamales, and more.</p>
                 </div>
-                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:scale-105">
+                <div class="bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center text-center card">
                     <img src="https://placehold.co/300x200/4c51bf/ffffff?text=Jamaican" alt="Jamaican Groceries" class="rounded-xl mb-4 shadow-md">
                     <h3 class="text-2xl font-semibold mb-2">Jamaican</h3>
                     <p class="text-gray-500">Stock up on jerk seasoning, callaloo, and other island favorites.</p>
                 </div>
-                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:scale-105">
+                <div class="bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center text-center card">
                     <img src="https://placehold.co/300x200/4c51bf/ffffff?text=American" alt="American Groceries" class="rounded-xl mb-4 shadow-md">
                     <h3 class="text-2xl font-semibold mb-2">American</h3>
                     <p class="text-gray-500">Your classic household brands and everyday essentials.</p>
@@ -82,8 +89,8 @@
 
         <!-- Meats and Produce Section -->
         <section id="meats" class="mb-16 md:mb-24">
-            <h2 class="text-4xl font-bold text-center mb-12">Fresh Meats & Produce</h2>
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-12 flex flex-col md:flex-row items-center gap-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-indigo-600">Fresh Meats & Produce</h2>
+            <div class="bg-white rounded-2xl shadow-xl p-6 md:p-12 flex flex-col md:flex-row items-center gap-8 card">
                 <img src="https://placehold.co/400x300/4c51bf/ffffff?text=Fresh+Meats" alt="Fresh Meats" class="rounded-xl w-full md:w-1/2 shadow-md">
                 <div class="text-center md:text-left">
                     <h3 class="text-3xl font-semibold mb-4 text-indigo-600">High-Quality Cuts Daily</h3>
@@ -98,11 +105,11 @@
 
         <!-- Hot Food Bar Section -->
         <section id="hot-food" class="mb-16 md:mb-24">
-            <h2 class="text-4xl font-bold text-center mb-12">Hot Food Bar</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-indigo-600">Hot Food Bar</h2>
             <p class="text-center text-lg max-w-3xl mx-auto mb-10 text-gray-600">
                 In a hurry? Grab a delicious, freshly made meal from our hot food bar. Perfect for a quick lunch or dinner on the go!
             </p>
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-12 flex flex-col md:flex-row-reverse items-center gap-8">
+            <div class="bg-white rounded-2xl shadow-xl p-6 md:p-12 flex flex-col md:flex-row-reverse items-center gap-8 card">
                 <img src="https://placehold.co/400x300/4c51bf/ffffff?text=Hot+Food+Bar" alt="Hot Food Bar" class="rounded-xl w-full md:w-1/2 shadow-md">
                 <div class="text-center md:text-left">
                     <h3 class="text-3xl font-semibold mb-4 text-indigo-600">Takeaway Only</h3>
@@ -117,20 +124,20 @@
 
         <!-- General Goods Section (Snacks, Soda, Kitchen) -->
         <section id="other" class="mb-16 md:mb-24">
-            <h2 class="text-4xl font-bold text-center mb-12">Snacks, Soda & Kitchenware</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-indigo-600">Snacks, Soda & Kitchenware</h2>
             <p class="text-center text-lg max-w-3xl mx-auto mb-10 text-gray-600">
                 Find all the essentials and accessories you need, from quick bites to kitchen tools.
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:scale-105">
+                <div class="bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center text-center card">
                     <img src="https://placehold.co/300x200/4c51bf/ffffff?text=Snacks" alt="Snacks" class="rounded-xl mb-4 shadow-md">
                     <h3 class="text-2xl font-semibold mb-2">Snacks & Soda</h3>
                 </div>
-                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:scale-105">
+                <div class="bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center text-center card">
                     <img src="https://placehold.co/300x200/4c51bf/ffffff?text=Kitchen+Utensils" alt="Kitchen Utensils" class="rounded-xl mb-4 shadow-md">
                     <h3 class="text-2xl font-semibold mb-2">Kitchen Utensils</h3>
                 </div>
-                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:scale-105">
+                <div class="bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center text-center card">
                     <img src="https://placehold.co/300x200/4c51bf/ffffff?text=Accessories" alt="Kitchen Accessories" class="rounded-xl mb-4 shadow-md">
                     <h3 class="text-2xl font-semibold mb-2">Accessories</h3>
                 </div>
@@ -139,11 +146,11 @@
 
         <!-- Alcohol & Tobacco Section -->
         <section id="alcohol" class="mb-16 md:mb-24">
-            <h2 class="text-4xl font-bold text-center mb-12">Alcohol, Beers & Tobacco</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-indigo-600">Alcohol, Beers & Tobacco</h2>
             <p class="text-center text-lg max-w-3xl mx-auto mb-10 text-gray-600">
                 Browse our selection of local and imported beers, wines, and spirits, along with various tobacco products.
             </p>
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-12 flex flex-col items-center text-center">
+            <div class="bg-white rounded-2xl shadow-xl p-6 md:p-12 flex flex-col items-center text-center card">
                 <div class="flex flex-wrap justify-center gap-6">
                     <img src="https://placehold.co/200x250/4c51bf/ffffff?text=Craft+Beer" alt="Craft Beer" class="rounded-xl shadow-md transform transition-transform hover:scale-105">
                     <img src="https://placehold.co/200x250/4c51bf/ffffff?text=Wine" alt="Wine" class="rounded-xl shadow-md transform transition-transform hover:scale-105">
